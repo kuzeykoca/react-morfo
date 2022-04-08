@@ -1,0 +1,13 @@
+@import './fontschema';
+@import './settings';
+
+html {
+    font-size: 62.5%;
+    background: $generic-bg;
+}
+
+body {
+    font-size: $s-size;
+    font-family: $font-glacial;
+    background-color: $generic-bg !important;
+}

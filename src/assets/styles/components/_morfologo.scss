@@ -1,0 +1,35 @@
+.morfo-logo-container{
+    overflow: hidden;
+}
+
+.morfo-logo-bg{
+    height: $view-height;
+    border-left: 100vw solid #cea0ba;
+    border-bottom: $view-height solid #35a29c;
+}
+
+.morfo-logo-holder{
+    height: $view-height;
+    position: absolute;
+    text-align: center;
+    display: table;
+}
+
+.morfo-logo-holder h1{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "metropolis";
+    font-size: $logo-size;
+}
+
+.morfo-logo-container p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+.morfo-logo-container a {
+    color: white;
+    font-weight: bold;
+}
