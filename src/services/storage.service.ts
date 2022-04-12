@@ -12,7 +12,7 @@ export const dataContext = (isEncrypted = false) => {
         return dataset.message
     }
     return {
-        data: null
+        content: null
     }
 }
 

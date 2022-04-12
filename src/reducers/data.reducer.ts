@@ -1,16 +1,30 @@
-import { PASS_USER } from "../actions/types.action"
+import {
+	SET_FACT_SUCCESS,
+	SET_FACT_FAILURE,
+	SET_FACT_STARTED,
+} from "../actions/types.action"
 import { dataContext } from "../services/storage.service"
 
 export default (state = dataContext(), action: any) => {
-    const { type, data } = action
+	const { type, content } = action
 
-    switch (type) {
-        case PASS_USER:
-            return {
-                ...state,
-                data,
-            }
-        default:
-            return state
-    }
+	switch (type) {
+		case SET_FACT_SUCCESS:
+			return {
+				...state,
+				content,
+			}
+		case SET_FACT_FAILURE:
+			return {
+				...state,
+				error: content
+			}
+		case SET_FACT_STARTED:
+			return {
+				...state,
+                content
+			}
+		default:
+			return state
+	}
 }

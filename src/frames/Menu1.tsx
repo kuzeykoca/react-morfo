@@ -1,12 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
-import { SetFact } from "../actions/data.action"
 
-const Home = (props: any) => {
-	const GetNewFact = () => {
-		props.onSetFact()
-	}
-
+const Menu1 = (props: any) => {
 	let updateTime = "N/A"
 	if (props.update_time) {
 		const startTime = new Date(props.update_time)
@@ -21,7 +16,7 @@ const Home = (props: any) => {
 				<div className="col-md-12 morfo-logo-bg"></div>
 				<div className="morfo-logo-holder">
 					<div>
-						React Morfo
+						React Morfo<h2 style={{ display: "block" }}>Menu 1</h2>
 						<h4 className="py-4">
 							{props?.fact ? props.fact : "No fact !"}
 						</h4>
@@ -30,12 +25,6 @@ const Home = (props: any) => {
 								"Updated "+ updateTime + " Minutes ago"
 							}
 						</h5>
-						<button
-							className="btn btn-success d-block m-auto border border-light"
-							onClick={GetNewFact}
-						>
-							Get a fact!
-						</button>
 					</div>
 				</div>
 				<p>
@@ -63,8 +52,4 @@ const mapStateToProps = (state: any) => {
 	}
 }
 
-const mapDispatchToProps = (dispatch: any) => ({
-	onSetFact: () => dispatch(SetFact()),
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps)(Menu1)

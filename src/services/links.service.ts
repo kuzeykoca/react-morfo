@@ -1,0 +1,1 @@
+export const factLink = "https://catfact.ninja/fact"

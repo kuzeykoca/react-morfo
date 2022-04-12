@@ -1,1 +1,3 @@
-export const PASS_USER = "PASS_USER"
+export const SET_FACT_SUCCESS = "SET_FACT_SUCCESS"
+export const SET_FACT_FAILURE = "SET_FACT_FAILURE"
+export const SET_FACT_STARTED = "SET_FACT_STARTED"

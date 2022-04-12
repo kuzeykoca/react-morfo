@@ -34,7 +34,7 @@ const NavigationBar = (props: any) => {
                 <Nav className='justify-content-end'>
                     <Nav>
                         <div className='navlink-holder'>
-                            <NavLink to='/' className={(navData) => (navData.isActive ? "nav-link active" : "nav-link")}>
+                            <NavLink to='/menu1' className={(navData) => (navData.isActive ? "nav-link active" : "nav-link")}>
                                 Menu 1
                             </NavLink>
                         </div>
@@ -42,7 +42,7 @@ const NavigationBar = (props: any) => {
 
                     <Nav>
                         <div className='navlink-holder'>
-                            <NavLink to='/' className={(navData) => (navData.isActive ? "nav-link active" : "nav-link")}>
+                            <NavLink to='/menu2' className={(navData) => (navData.isActive ? "nav-link active" : "nav-link")}>
                                 Menu 2
                             </NavLink>
                         </div>
