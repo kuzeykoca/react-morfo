@@ -4,7 +4,7 @@ import { SetFact } from "../actions/data.action"
 
 const Home = (props: any) => {
 	const GetNewFact = () => {
-		props.onSetFact()
+		props.SetFact()
 	}
 
 	let updateTime = "N/A"
@@ -64,7 +64,7 @@ const mapStateToProps = (state: any) => {
 }
 
 const mapDispatchToProps = (dispatch: any) => ({
-	onSetFact: () => dispatch(SetFact()),
+	SetFact: () => dispatch(SetFact()),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
