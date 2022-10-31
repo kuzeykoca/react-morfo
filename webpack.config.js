@@ -15,7 +15,7 @@ module.exports = {
     entry: "./index.tsx",
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "dist/"),
+        path: path.resolve(__dirname, "dist"),
     },
     plugins: [
         environments,
@@ -58,7 +58,6 @@ module.exports = {
             directory: path.join(__dirname, "dist"),
         },
         port: process.env.PORT,
-        historyApiFallback: true,
         compress: true,
         hot: true, // false
         liveReload: true, // false

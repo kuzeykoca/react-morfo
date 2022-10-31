@@ -3,14 +3,14 @@ import { ToastContainer as Container, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
 const Toast = (typeOfToast: string, message: string) => {
-    const options = {
+    const options: any = {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        progress: undefined,
+        progress: 0,
     } as const
 
     switch (typeOfToast) {

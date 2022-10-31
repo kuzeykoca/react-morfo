@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom/client"
+import { createRoot } from 'react-dom/client';
 import "./src/assets/styles/style.scss"
 import "normalize.css/normalize.css"
 import "bootstrap/dist/css/bootstrap.css"
@@ -18,4 +18,4 @@ const App = () => {
 }
 
 const container: any = document.getElementById("app")
-ReactDOM.createRoot(container).render(<App />)
+createRoot(container).render(<App/>)
